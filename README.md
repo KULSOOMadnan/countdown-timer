@@ -13,13 +13,13 @@ counts down to zero. Once the timer reaches zero, it notifies the user and termi
 - [Technology used](#Technologyused💻)
 - [License](#license)
 
-## Features
+## Features✨
 
 - **Interactive Setup**: Users can specify the duration of the countdown timer in seconds.
 - **Real-Time Countdown Display**: The timer displays the remaining time in hours, minutes, and seconds in real-time.
 - **Colorful Output**: Output messages are formatted using the chalk library, providing colorful and visually appealing feedback.
 
- ## Why Use This Timer?
+ ## Why Use This Timer?🗯️
 
 - **Productivity Tool**: Use this timer to set a specific duration for focused work sessions, helping you stay productive and manage your time effectively.
 - **Time Management**: Set the timer to track various activities, such as cooking, exercise routines, or study sessions, ensuring you allocate the right amount of time to each task.
