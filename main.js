@@ -2,9 +2,11 @@
 import inquirer from "inquirer";
 import { differenceInSeconds } from "date-fns";
 import chalk from "chalk";
+// welcome message
 console.log(chalk.magenta.italic.bold("\n\t#-----------------------------------------------------------------#"));
 console.log(chalk.rgb(200, 162, 200).bold.italic("\t\t---------welcome to countdown Timmer---------"));
 console.log(chalk.magenta.italic.bold("\t#-----------------------------------------------------------------#\n"));
+// asking seconds to start a timmer
 let time = await inquirer.prompt([
     {
         name: "clock",
@@ -18,6 +20,7 @@ function timmer(value) {
     setInterval(() => {
         let currentTime = new Date();
         let difftime = differenceInSeconds(intervaltime, currentTime);
+        // if the timmer end this message will print
         if (difftime <= 0) {
             console.log(chalk.rgb(75, 0, 130).bold.italic("\n\n\t\t\t'The timmer has come to an end..'"));
             console.log(chalk.magenta.italic.bold(`\n\t #-----------------------------------------------------------------#`));
@@ -32,6 +35,7 @@ function timmer(value) {
     }, 1000);
 }
 let Timer = time.clock;
+// if the user write alphbateor any onther character this timmer will not run and print that message
 if (Number.isNaN(time.clock)) {
     console.log(chalk.italic.rgb(220, 20, 60)("\n Error: please enter only numerical character"));
 }
